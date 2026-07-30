@@ -1,3 +1,4 @@
+onboarding = false
 # herdr configuration
 # Place this file at ~/.config/herdr/config.toml
 
@@ -25,7 +26,7 @@
 # red = "#ff6188"
 # green = "#a6e3a1"
 
-name = "gruvbox"
+name = "nord"
 auto_switch = false
 [terminal]
 # Executable used for new interactive panes.
@@ -91,7 +92,7 @@ next_tab = "alt+shift+l"
 # switch_tab = "prefix+1..9"
 # switch_workspace = ""   # optional indexed binding, e.g. "prefix+shift+1..9"
 # close_tab = "prefix+shift+x"
-# rename_pane = "prefix+shift+p"
+rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
 focus_pane_left = "alt+h"
 focus_pane_down = "alt+j"
@@ -100,7 +101,7 @@ focus_pane_right = "alt+l"
 # cycle_pane_next = "prefix+tab"
 # cycle_pane_previous = "prefix+shift+tab"
 # last_pane = ""          # optional, unset by default; bind e.g. "prefix+tab" for global back-and-forth
-split_vertical = "prefix+n"
+split_vertical = "prefix+p"
 # split_horizontal = "prefix+minus"
 # close_pane = "prefix+x"
 # zoom = "prefix+z"       # legacy alias: fullscreen
@@ -128,6 +129,12 @@ split_vertical = "prefix+n"
 # command = "lazygit"
 # width = "80%"
 # height = "80%"
+
+# Toggle Aerospace alt bindings (frees them for herdr navigation)
+[[keys.command]]
+key = "prefix+a"
+type = "shell"
+command = "~/.config/herdr/toggle-aerospace.sh"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
@@ -311,6 +318,7 @@ pane_history = false
 # Values: block, steady_block (default), underline, steady_underline, bar, steady_bar.
 # cjk_ime_cursor_shape = "steady_block"
 
+switch_ascii_input_source_in_prefix = true
 [advanced]
 # Maximum scrollback buffer size in bytes retained per pane terminal.
 # Matches Ghostty's default scrollback-limit behavior.
