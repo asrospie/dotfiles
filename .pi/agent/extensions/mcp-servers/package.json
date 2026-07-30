@@ -1,0 +1,17 @@
+{
+  "name": "pi-mcp-servers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MCP server support for Pi",
+  "type": "module",
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}

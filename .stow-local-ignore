@@ -22,3 +22,4 @@ _darcs
 
 # Files used only by this repository
 ^/\.stow-local-ignore$
+^/bootstrap\.sh$
