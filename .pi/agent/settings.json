@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "0.82.1",
+  "defaultProvider": "opencode",
+  "defaultModel": "deepseek-v4-flash-free",
+  "defaultThinkingLevel": "high",
+  "theme": "dark",
+  "packages": [
+    "git:github.com/DietrichGebert/ponytail",
+    "git:github.com/asrospie/pi-bridge"
+  ]
+}

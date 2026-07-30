@@ -1,2 +1,2 @@
-# Locally installed dependencies for the Pi MCP extension
-pi/.pi/agent/extensions/mcp-servers/node_modules/
+# Node dependencies for locally installed extensions
+.pi/agent/extensions/**/node_modules/
