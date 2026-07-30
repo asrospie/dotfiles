@@ -1,1 +1,24 @@
-bootstrap.sh
+# GNU Stow default ignore list
+RCS
+.+,v
+
+CVS
+\.\#.+
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+
+.+~
+\#.*\#
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# Files used only by this repository
+^/\.stow-local-ignore$
